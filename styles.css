@@ -1,0 +1,318 @@
+/* SUMMARY
+1. GLOBAL
+2. HOMEPAGE
+3. X
+4. X
+
+*/
+/* Underscored name properties are custom */
+
+/*** 1. GLOBAL ***/
+/* Color variables
+  ============================= */
+
+:root {
+  --color-purple: #c271ff;
+  --color-dark-blue: #071629;
+}
+  
+/* Typography
+============================ */
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.ttf') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf') format('truetype'),
+    url('fonts/holberton_school-icon.woff') format('woff'),
+    url('fonts/holberton_school-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base
+============================ */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bg__purple {
+  background-color: var(--color-purple);
+}
+
+.txt__purple {
+  color: var(--color-purple);
+}
+
+.bg__dark-blue {
+  background-color: var(--color-dark-blue);
+}
+
+.txt__dark-blue {
+  color: var(--color-dark-blue);
+}
+
+.btn-primary {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px !important;
+  border: 0;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary,
+.btn-primary:active {
+  background-color: var(--color-purple) !important;
+} 
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Icons
+============================ */
+/* Hidden Menu
+  ============================== */
+
+.menu__icon {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  cursor: pointer;
+}
+
+.menu__icon::before {
+  content: '\e911';
+  font-size: 1.5rem;
+  margin: 1.5rem 0  0 1rem;
+}
+
+/*** 1. HOMEPAGE ***/
+/* Header - Logo
+============================ */
+
+.logo__smile {
+  text-indent: -99999px;
+  width: 37px;
+  height: 30px;
+  background: url(images/smile_off.svg) 0 0 no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.logo {
+  text-indent: -99999px;
+  width: 112px;
+  height: 13px;
+  background: url(images/logo.svg) 0 0 no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+/* Navigation Bar
+  ============================== */
+
+.nav-link {
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+}
+
+/* Hero
+  ============================== */
+
+.hero {
+  background: url('images/pic_1.jpg') var(--color-dark-blue) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 1093px;
+  position: relative;
+}
+
+.hero__title {
+  font-size: 7.5rem;
+  margin-top: 10rem;
+}
+
+/* Pros Section
+  ============================== */
+
+.section__pros-title {
+  font-size: 32px;
+}
+
+.pros__photo {
+  width: 150px;
+  height: 150px;
+}
+
+.pros__name {
+  font-size: 18px;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+  .nav {
+    margin-top: 1rem;
+  }
+  .hero {
+    background-size: 1050px;
+    background-position: top;
+    padding-top: 1rem;
+  }
+  .hero__title {
+    font-size: 61px;
+    margin-top: 10.5rem;
+    line-height: 1.75;
+  }
+  .hero .btn-primary {
+    margin-top: 2.5rem !important;
+  }
+  .section__pros-title {
+    margin-top: 1rem !important;
+  }
+  .hero article {
+    margin-bottom: 2.25rem;
+  }
+} 
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .hero {
+    padding-bottom: 2.5rem;
+  }
+  .hero__title {
+    line-height: 1;
+  }
+  .section__pros-title {
+    padding: 0 !important;
+  }
+}
+
+/* Testimonials Carousel Section
+  ============================== */
+.carousel__img {
+  width: 160px;
+  height: 160px;
+}
+
+.carousel-control-prev img,
+.carousel-control-next img {
+  width: 29.04px;
+  height: 62.67px;
+}
+
+.carousel-item__text p {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 575px) {
+  .carousel__img {
+    width: 148px;
+    height: 148px;
+  }
+
+  .carousel-item__text {
+    margin-right: 0;
+  }
+}
+
+/* Tutorials Carousel Section
+  ============================== */
+
+.card {
+  width: 16rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+}
+
+.play__icon {
+  width: 64px;
+}
+
+h4.card-title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.duration__video,
+.user__name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 27px;
+  color: var(--color-purple);
+}
+
+.rating__stars img {
+  width: 15px;
+  margin-left: 4px;
+}
+
+
+/* Media Queries for Popular Tutorials and Latest Videos
+  ============================== */
+
+@media screen and (max-width: 576px) {
+  #popular_tutorials-sm,
+  #latest-videos-sm {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1109px) {
+  #popular_tutorials-md,
+  #latest-videos-md {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  #popular_tutorials-lg,
+  #latest-videos-lg {
+    display: block !important;
+  }
+}
+
+/* Free Membership Section
+  ============================== */
+
+.smiley__card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.smiley__card p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .smiley__card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 575px) {
+  .smiley__card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .smiley__card {
+    padding-bottom: 2.25rem;
+  }
+}
