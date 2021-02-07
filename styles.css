@@ -3,6 +3,7 @@
 2. HOMEPAGE
 3. PRICING
 4. COURSES
+5. FOOTER
 
 */
 /* Underscored name properties are custom */
@@ -302,7 +303,30 @@ h4.card-title {
   }
 }
 
+/*** 5. FOOTER ***/
+
+footer {
+  height: 250px;
+}
+
 .social-media__item a {
   color: white;
   font-size: 32px;
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  opacity: 0.35;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .social-media {
+    padding-top: 0.75rem;
+  }
+  footer p.copy {
+    padding-top: 1.5rem !important;
+  }
 }
