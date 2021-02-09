@@ -349,7 +349,7 @@ h4.card-title {
 .pricing h1 {
   font-size: 32px;
   margin-top: 13.5rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 5rem;
 }
 
 .pricing h1 span {
@@ -389,8 +389,7 @@ h4.card-title {
 }
 
 .prices__table td {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 1.25rem 0;
   border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -408,16 +407,37 @@ h4.card-title {
   color: #82D24F;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
+  .prices__table tbody tr:nth-child(-n+3) td {
+    padding: 1rem 0;
+  }
+  .pricing__header {
+    background-size: 1400px;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pricing__header {
+    background-position: -550px top;
+  }
+  .pricing__grid h1 {
+    font-size: 24px;
+    margin-top: 11.5rem;
+    margin-bottom: 3rem;
+  }
+  .smile__icon {
+    max-width: 30px;
+  }
+  .pricing__grid h2 {
+    margin-bottom: 2.25rem;
+  }
   .prices__table {
     table-layout: initial;
   }
   .prices__table th {
     font-size: 12px;
     line-height: 15px;
-  }
-  .prices__table th.col__3 {
-    text-align: right;
   }
   .prices__table tbody tr > td:first-child {
     width: 50%;
@@ -467,6 +487,8 @@ h4.card-title {
   .faq__item {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
