@@ -127,7 +127,7 @@ a.current__link::after {
   background-size: contain;
 }
 
-.logo {
+.logo__text {
   text-indent: -99999px;
   width: 112px;
   height: 13px;
@@ -144,17 +144,27 @@ a.current__link::after {
   letter-spacing: 0.05rem;
 }
 
+@media screen and (max-width: 575px) {
+  nav.nav {
+    padding-top: 1rem;
+  }
+  .logo {
+    padding-top: 0.5rem;
+  }
+}
+
 /* Hero
   ============================== */
 
-.header__homepage {
+.homepage__header {
   background: url('images/pic_1.jpg') var(--color-dark-blue) center center no-repeat;
   background-size: cover;
   min-height: 1093px;
   width: 100%;
+  padding-bottom: 2.5rem;
 }
 
-.hero__title {
+.homepage h1 {
   font-size: 7.5rem;
   margin-top: 10rem;
 }
@@ -162,7 +172,7 @@ a.current__link::after {
 /* Pros Section
   ============================== */
 
-.section__pros-title {
+.pros_section h2 {
   font-size: 32px;
 }
 
@@ -177,38 +187,31 @@ a.current__link::after {
 }
 
 @media screen and (max-width: 575px) {
-  .nav {
-    margin-top: 1rem;
-  }
-  .header__homepage {
+  .homepage__header {
     background-size: 1050px;
     background-position: top;
-    padding-top: 1rem;
   }
-  .hero__title {
-    font-size: 61px;
+  .homepage h1 {
+    font-size: 3.5rem;
     margin-top: 10.5rem;
     line-height: 1.75;
   }
-  .hero .btn-primary {
-    margin-top: 2.5rem !important;
+  .homepage__header .btn-primary {
+    margin-top: 3rem !important;
   }
-  .section__pros-title {
+  .pros_section h2 {
     margin-top: 1rem !important;
   }
-  .hero article {
+  .pros_section div article {
     margin-bottom: 2.25rem;
   }
 } 
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .hero {
-    padding-bottom: 2.5rem;
-  }
-  .hero__title {
+  .homepage h1 {
     line-height: 1;
   }
-  .section__pros-title {
+  .pros_section h2 {
     padding: 0 !important;
   }
 }
@@ -245,7 +248,7 @@ a.current__link::after {
 /* Tutorials Carousel Section
   ============================== */
 
-.card {
+.tutorial-item  .card {
   width: 16rem;
   margin-left: 5px;
   margin-right: 5px;
@@ -489,6 +492,48 @@ h4.card-title {
     margin-bottom: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+}
+
+/*** 3. COURSES PAGE ***/
+/* Hero
+  ============================== */
+
+.courses__header {
+  background: url('images/pic_3.jpg') bottom center no-repeat;
+  background-size: cover;
+  height: 216px;
+}
+
+.courses h1 {
+  font-family: 'Coiny', cursive;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.courses__results .card {
+  border: none;
+}
+
+.courses__results {
+  padding-bottom: 2rem;
+}
+
+p.text-results {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .courses__header {
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .courses__header {
+    background-position: center center;
+    height: 125px;
   }
 }
 
