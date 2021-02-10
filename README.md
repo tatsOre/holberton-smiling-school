@@ -9,13 +9,13 @@ This webpage has been designed by Nicolas Philippot, UI/UX designer.
 [homepage.html](https://github.com/tatsOre/holberton-smiling-school/blob/master/homepage.html)
 
 **Details:**
-# · Desktop:
+##### · Desktop:
 ![Smiling School](https://github.com/tatsOre/holberton-smiling-school/blob/master/src/homepage_header.png)
 
-# · "Carousel of quotes" section:
+##### · "Carousel of quotes" section:
 ![Smiling School](https://github.com/tatsOre/holberton-smiling-school/blob/master/src/homepage_carousel_quotes.gif)
 
-# · Mobile:
+##### · Mobile:
 ![Smiling School](https://github.com/tatsOre/holberton-smiling-school/blob/master/src/homepage_header_responsive.gif)
 
 ## Pricing page:
@@ -25,13 +25,13 @@ This webpage has been designed by Nicolas Philippot, UI/UX designer.
 [courses.html](https://github.com/tatsOre/holberton-smiling-school/blob/master/courses.html)
 
 **Details:**
-# · Search section - Desktop:
+#####  · Search section - Desktop:
 ![Smiling School](https://github.com/tatsOre/holberton-smiling-school/blob/master/src/courses_01.gif)
 
-# · Search section - Tablet/Mobile:
+#####  · Search section - Tablet/Mobile:
 ![Smiling School](https://github.com/tatsOre/holberton-smiling-school/blob/master/src/courses_02.gif)
 
-# · Results section
+#####  · Results section
 ![Smiling School](https://github.com/tatsOre/holberton-smiling-school/blob/master/src/courses_03.gif)
 
 ### Author:
