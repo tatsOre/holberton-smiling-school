@@ -114,6 +114,12 @@ a.current__link::after {
   content: "\e905";
 }
 
+/* Search input - Courses Page
+  ============================== */
+.holberton_school-icon-search:before {
+  content: '\e912';
+}
+
 /*** 1. HOMEPAGE ***/
 /* Header - Logo
 ============================ */
@@ -502,7 +508,6 @@ h4.card-title {
 .courses__header {
   background: url('images/pic_3.jpg') bottom center no-repeat;
   background-size: cover;
-  height: 216px;
 }
 
 .courses h1 {
@@ -510,6 +515,56 @@ h4.card-title {
   font-size: 32px;
   line-height: 35px;
 }
+
+/* Courses Search
+  ============================== */
+
+.courses__search .form-group label {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.input__container {
+  background-color: #d194ff;
+}
+
+.holberton_school-icon-search:before {
+  padding-right: 15px;
+  font-size: 1.5rem;
+}
+
+.input__container input::placeholder {
+  opacity: 0.5;
+}
+
+.dropdown .btn {
+  width: 100%;
+  background-color: #d194ff;
+  text-align: left;
+}
+
+.input__container input::placeholder,
+.dropdown .btn {
+  font-size: 23px;
+  line-height: 29px;
+  color: white;
+}
+
+.input__container, 
+.dropdown-toggle {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px 4px 0 0;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  right: 20px;
+  top: 45%;
+}
+
+/* Courses Results
+  ============================== */
 
 .courses__results .card {
   border: none;
@@ -533,7 +588,6 @@ p.text-results {
 @media screen and (max-width: 576px) {
   .courses__header {
     background-position: center center;
-    height: 125px;
   }
 }
 

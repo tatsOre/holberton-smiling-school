@@ -8,8 +8,8 @@
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="images/favicon.png" rel="icon" type="image/png" />
@@ -48,9 +48,49 @@
     
     <main>
       <!-- Courses Dropdown -->
-      <section class="courses__search bg__purple">
+      <section class="courses__search bg__purple text-white pt-4 pb-3">
         <div class="container">
-          DROPDOWN FORM
+          <form class="row">
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label for="keywords" class="font-weight-bold">KEYWORDS</label>
+                <div class="input__container d-flex align-items-center p-2">
+                  <i class="holberton_school-icon-search align-middle" aria-hidden="true"></i>
+                  <input class="font-weight-light border-0 bg-transparent w-100 p-1" type="search" id="keywords" placeholder="Search by keywords" aria-describedby="keywords">
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <label for="dropdownTopic" class="font-weight-bold">TOPIC</label>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle font-weight-light p-2" type="button" id="dropdownTopic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Novice</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownTopic">
+                    <a class="dropdown-item" href="#">Novice</a>
+                    <a class="dropdown-item" href="#">Intermediate</a>
+                    <a class="dropdown-item" href="#">Expert</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <label for="dropdownTopic" class="font-weight-bold">SORT BY</label>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle font-weight-light p-2" type="button" id="dropdownTopic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Most Popular</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownTopic">
+                    <a class="dropdown-item" href="#">Most Popular</a>
+                    <a class="dropdown-item" href="#">Most Recent</a>
+                    <a class="dropdown-item" href="#">Most Viewed</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
         </div>
       </section>
       <section class="courses__results py-5">
@@ -403,14 +443,15 @@
       </div>
     </footer>
 
-    <!-- Scripts Bootstrap 4 -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"></script>
+    <!-- Scripts Bootstrap 4 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
   </body>
 </html>
