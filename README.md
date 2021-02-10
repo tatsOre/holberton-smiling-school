@@ -6,16 +6,34 @@
 This webpage has been designed by Nicolas Philippot, UI/UX designer.
 
 ## Homepage:
-[Homepage](https://github.com/tatsOre/holberton-smiling-school/blob/master/homepage.html)
+[homepage.html](https://github.com/tatsOre/holberton-smiling-school/blob/master/homepage.html)
+**Details:**
+· Desktop:
+(https://github.com/tatsOre/holberton-smiling-school/blob/master/src/homepage_header.png)
+
+· "Carousel of quotes" section:
+(https://github.com/tatsOre/holberton-smiling-school/blob/master/src/homepage_carousel_quotes.gif)
+
+· Mobile:
+(https://github.com/tatsOre/holberton-smiling-school/blob/master/src/homepage_header_responsive.gif)
 
 ## Pricing page:
-[Pricing Page](https://github.com/tatsOre/holberton-smiling-school/blob/master/pricing.html)
+[pricing.html](https://github.com/tatsOre/holberton-smiling-school/blob/master/pricing.html)
 
 ## Courses page:
-[Courses Page](https://github.com/tatsOre/holberton-smiling-school/blob/master/courses.html)
+[courses.html](https://github.com/tatsOre/holberton-smiling-school/blob/master/courses.html)
+**Details:**
+· Search section - Desktop:
+(https://github.com/tatsOre/holberton-smiling-school/blob/master/src/courses_01.gif)
+
+· Search section - Tablet/Mobile:
+(https://github.com/tatsOre/holberton-smiling-school/blob/master/src/courses_02.gif)
+
+· Results section
+(https://github.com/tatsOre/holberton-smiling-school/blob/master/src/courses_03.gif)
 
 ### Author:
 * Tatiana Orejuela Zapata | [Github](https://github.com/tatsOre)
 
-##### Specializations - Web Stack programming ― Front-end
+##### Specializations - Web Stack programming ― Front-end - Holberton School
 ##### Febrary, 2021. 
