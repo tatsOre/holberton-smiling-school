@@ -522,6 +522,7 @@ h4.card-title {
 .courses__search .form-group label {
   font-size: 12px;
   line-height: 15px;
+  padding-bottom: 0.25rem;
 }
 
 .input__container {
@@ -563,6 +564,11 @@ h4.card-title {
   top: 45%;
 }
 
+a.dropdown-item:hover {
+  color: var(--color-purple);
+  background-color: white;
+}
+
 /* Courses Results
   ============================== */
 
@@ -588,6 +594,7 @@ p.text-results {
 @media screen and (max-width: 576px) {
   .courses__header {
     background-position: center center;
+    padding-bottom: 2rem;
   }
 }
 
